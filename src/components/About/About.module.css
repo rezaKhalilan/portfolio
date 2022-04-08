@@ -26,7 +26,7 @@
 .square:hover {
   transform: rotate(90deg);
   transition: var(--transition);
-  background: var(--gray);
+  background: var(--bg-color);
 }
 
 .square__one {

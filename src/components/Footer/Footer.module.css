@@ -8,7 +8,7 @@
 }
 
 .footer a {
-  color: aliceblue;
+  color: var(--bg-color);
   font-size: 2rem;
 }
 

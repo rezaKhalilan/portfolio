@@ -12,11 +12,11 @@
 }
 
 :root {
-  --bg-color: #cdc6a5;
-  --bg-varient: #d8c3a5;
-  --gray: #696d7d;
-  --red-one: #6f9283;
-  --red-two: #8d9f87;
+  --bg-color: #568ea3;
+  --bg-varient: #68c3d4;
+  --gray: #ffffff;
+  --red-one: #ffe8d1;
+  --red-two: #f4f4f9;
 
   --container-lg: 75%;
   --container-md: 85%;
@@ -108,6 +108,8 @@ img {
   width: 200px;
   padding: 2.5rem;
   text-align: center;
+  background: var(--bg-varient);
+  border-radius: 8px;
 }
 
 .centertext {

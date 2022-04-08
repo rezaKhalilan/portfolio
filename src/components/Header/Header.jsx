@@ -21,7 +21,7 @@ const Header = () => {
             textAlign: "center",
           }}
           startDelay={1000}
-          cursorColor="gray"
+          cursorColor="white"
           text="Front-end Developer"
           typeSpeed={150}
         />
