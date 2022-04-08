@@ -1,0 +1,101 @@
+.contact__container {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  background: var(--bg-varient);
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.card {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 350px;
+  padding: 1.5rem;
+  text-align: center;
+  background: var(--red-one);
+  color: var(--bg-color);
+  border-radius: 1rem;
+}
+
+.card svg {
+  font-size: 1.5rem;
+}
+
+.card p {
+  margin-top: 0.9rem;
+  margin-bottom: 0.9rem;
+}
+
+.card button {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background: var(--gray);
+  color: var(--bg-color);
+  cursor: pointer;
+}
+
+.card button a {
+  color: unset;
+}
+
+.card button:hover {
+  background: var(--bg-color);
+  color: var(--gray);
+  transition: var(--transition);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 1.2rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  border: 2px solid var(--red-one);
+  resize: none;
+  color: var(--red-two);
+}
+
+form button {
+  padding: 1rem 1rem;
+  border-radius: 8px;
+  margin-top: 0.3rem;
+  background: var(--gray);
+  color: var(--bg-color);
+  cursor: pointer;
+}
+
+form button:hover {
+  background: var(--bg-color);
+  color: var(--gray);
+  transition: var(--transition);
+}
+
+@media screen and (max-width: 1430px) {
+  .contact__container {
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  .contacts {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .card {
+    width: 250px;
+  }
+}

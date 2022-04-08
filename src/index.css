@@ -1,13 +1,139 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;1,700&display=swap");
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: inherit;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+:root {
+  --bg-color: #cdc6a5;
+  --bg-varient: #d8c3a5;
+  --gray: #696d7d;
+  --red-one: #6f9283;
+  --red-two: #8d9f87;
+
+  --container-lg: 75%;
+  --container-md: 85%;
+  --container-sm: 90%;
+
+  --transition: all 400ms ease;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: "Montserrat", "Helvetica", "sans-serif";
+  background: var(--bg-color);
+  color: var(--gray);
+  line-height: 1.7;
+}
+
+.container {
+  width: var(--container-lg);
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 500;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+section {
+  margin-bottom: 5rem;
+}
+
+section > h1,
+section > h2 {
+  margin-bottom: 3rem;
+  color: var(--red-one);
+}
+
+a {
+  color: var(--red-one);
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--bg-varient);
+}
+
+.btn {
+  width: max-content;
+  display: inline-block;
+  color: var(--red-two);
+  padding: 0.75rem 1.2rem;
+  cursor: pointer;
+  border-radius: 0.4rem;
+  border: 1px solid var(--red-one);
+  transition: var(--transition);
+}
+
+.btn-primary {
+  background: var(--red-two);
+  color: var(--bg-color);
+}
+
+.btn:hover {
+  background: var(--bg-varient);
+  color: var(--gray);
+  border-color: transparent;
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 200px;
+  padding: 2.5rem;
+  text-align: center;
+}
+
+.centertext {
+  text-align: center;
+}
+
+.card > h3 {
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container-md);
+  }
+
+  section {
+    margin-top: 6rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--container-sm);
+  }
+
+  section > h2 {
+    margin-bottom: 2rem;
+  }
 }

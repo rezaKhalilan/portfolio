@@ -1,0 +1,47 @@
+.projects__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.8rem;
+  margin: 0 auto;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.project {
+  width: 500px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 1.5rem;
+  background: var(--bg-varient);
+  border-radius: 12px;
+}
+
+.project img {
+  border-radius: 3px;
+}
+
+.btn__container {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.git {
+  padding: 1rem 1.2rem;
+  background: var(--red-one);
+  border-radius: 8px;
+  margin-right: 5px;
+  color: var(--bg-color);
+  cursor: pointer;
+}
+.url {
+  padding: 1rem 1.2rem;
+  background: var(--gray);
+  border-radius: 8px;
+  color: var(--bg-color);
+  cursor: pointer;
+}
+
+.git a,
+.url a {
+  color: unset;
+}
